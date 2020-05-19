@@ -75,8 +75,17 @@ module.exports = {
 
   // Read all books on local database
   async read (req, res) {
+    const Op = db.Sequelize.Op;
     try {
-      const result = await Book.findAll()
+      const options = {}
+      // define all the search parameter (if available)
+      if (req.query.name) options.name = req.query.name
+      if (req.query.country) options.country = req.query.country
+      if (req.query.publisher) options.publisher = req.query.publisher
+      if (req.query.release_date) options.release_date = { [Op.startsWith]: `${req.query.release_date}` }
+      const result = await Book.findAll({
+        where: options
+      })
       const books = result.map(item => ({
         id: item.id,
         name: item.name,
