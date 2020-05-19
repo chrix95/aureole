@@ -76,15 +76,7 @@ module.exports = {
   // Read all books on local database
   async read (req, res) {
     try {
-      // Access the provided 'page' and 'limit' query parameters
-      const page = req.query.page ? req.query.page : 1
-      const limit = req.query.limit ? req.query.limit : 20
-      const result = await Book.findAll({
-        limit: limit,
-        offset: (limit * page) - limit // (resultPerPage * page) - resultPerPage
-      })
-      // Count how many products were found
-      const numOfBook = await Book.count();
+      const result = await Book.findAll()
       const books = result.map(item => ({
         id: item.id,
         name: item.name,
@@ -98,10 +90,7 @@ module.exports = {
       return res.status(200).send({
         status_code: 200,
         status: 'success',
-        data: books,
-        currentPage: page, 
-        pages: Math.ceil(numOfBook / limit), 
-        totalResult: numOfBook
+        data: books
       })
     } catch (error) {
       // error occured
