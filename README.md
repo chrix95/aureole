@@ -27,7 +27,7 @@ npm start or npm run start
 ```
 
 ### Available endpoints and payload
-- Returns an array of books from IceAndFire API and returns an empty array of no result found <br>
+- Returns an array of books from IceAndFire API and returns an empty array of no result found. Also you cacn use the name query parameter to search for a book on IceAndFire API <br>
 ``` 
 GET http://localhost:3001/api/external-books?name=:nameOfABook 
 ```
@@ -253,4 +253,4 @@ npm run test
 ```
 
 ## Support
-For support towards this project, reach me on <a href="tel:08183780409">phone</a> or <a href="mailto:engchris95@gmail.com">email</a>.
+For support towards this project, reach me on <a href="tel:2348183780409">phone</a> or <a href="mailto:engchris95@gmail.com">email</a>.
