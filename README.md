@@ -28,7 +28,9 @@ npm start or npm run start
 
 ### Available endpoints and payload
 - Returns an array of books from IceAndFire API and returns an empty array of no result found
-``` GET http://localhost:3001/api/external-books?name=:nameOfABook ```
+``` 
+GET http://localhost:3001/api/external-books?name=:nameOfABook 
+```
 sample response
 ```
 {
