@@ -1,4 +1,4 @@
-# iRecharge Web
+# Aureole API project setup
 
 ## Project setup
 1. Install node on your computer <a href="https://nodejs.org/en/download/">node</a>
@@ -13,13 +13,13 @@ npm install
 npm install -g nodemon
 ```
 6. To test the production you need to duplicate the `.env.sample` file and rename to `.env` and set your configurations
-If no .env configuration is set, the default configuration used is:
-PORT=3001
-DB_NAME=aureole
-DB_USER=root
-DB_PASSWORD=
-DIALECT=mysql
-HOST=127.0.0.1
+If no .env configuration is set, the default configuration used is: <br>
+PORT=3001 <br>
+DB_NAME=aureole <br>
+DB_USER=root <br>
+DB_PASSWORD= <br>
+DIALECT=mysql <br>
+HOST=127.0.0.1 <br>
 
 ### Compiles and starts server for development
 ```
@@ -27,8 +27,10 @@ npm start or npm run start
 ```
 
 ### Available endpoints and payload
-- Returns an array of books from IceAndFire API and returns an empty array of no result found
-``` GET http://localhost:3001/api/external-books?name=:nameOfABook ```
+- Returns an array of books from IceAndFire API and returns an empty array of no result found <br>
+``` 
+GET http://localhost:3001/api/external-books?name=:nameOfABook 
+```
 sample response
 ```
 {
@@ -62,7 +64,9 @@ sample response
 ```
 
 - Create a book on the local machine
-``` POST http://localhost:3001/api/v1/books ```
+``` 
+POST http://localhost:3001/api/v1/books 
+```
 sample payload
 ```
 {
@@ -98,7 +102,9 @@ sample response
 ```
 
 - Read all books on the local machine
-``` GET http://localhost:3001/api/v1/books ```
+``` 
+GET http://localhost:3001/api/v1/books 
+```
 sample response
 ```
 {
@@ -136,7 +142,9 @@ sample response
 ```
 
 - The Read API can be searchable by name (stirng), country(string), publisher(string) and realease date(year, integer). Note: The search query parameter are optional
-``` GET http://localhost:3001/api/v1/books?name=Drifted Apart 23&country=Nigeria&release_date=1990 ```
+``` 
+GET http://localhost:3001/api/v1/books?name=Drifted Apart 23&country=Nigeria&release_date=1990 
+```
 sample response
 ```
 {
@@ -161,7 +169,9 @@ sample response
 ```
 
 - Update a book on the local machine. Note: The payload requires you send parameter that are meant to be changed as it ONLY updates the parameter sent in the payload
-``` PATCH http://localhost:3001/api/v1/books/28 ```
+``` 
+PATCH http://localhost:3001/api/v1/books/28 
+```
 sample payload
 ```
 {
@@ -194,7 +204,9 @@ sample response
 ```
 
 - Delete a book on the local machine.
-``` DELETE http://localhost:3001/api/v1/books/28 ```
+``` 
+DELETE http://localhost:3001/api/v1/books/28 
+```
 sample response
 ```
 {
@@ -206,7 +218,9 @@ sample response
 ```
 
 - Show a book on the local machine.
-``` GET http://localhost:3001/api/v1/books/28 ```
+``` 
+GET http://localhost:3001/api/v1/books/28 
+```
 sample response
 ```
 {
