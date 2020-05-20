@@ -13,8 +13,8 @@ npm install
 npm install -g nodemon
 ```
 6. To test the production you need to duplicate the `.env.sample` file and rename to `.env` and set your configurations
-If no .env configuration is set, the default configuration used is:
-PORT=3001
+If no .env configuration is set, the default configuration used is:<br>
+PORT=3001 <br>
 DB_NAME=aureole
 DB_USER=root
 DB_PASSWORD=
