@@ -242,6 +242,19 @@ sample response
 }
 ```
 
+### Run the automated test
+The test was implemented using mocha and chai which is installed as a dev dependency. The NODE_ENV="test" by default for carrying out test
+1. Set your test credentials in the .env file <br>
+```
+TEST_DB_NAME=TEST_DATABASE_NAME
+TEST_DB_USER=TEST_DATABASE_USER
+TEST_DB_PASSWORD=TEST_DATABASE_PASSWORD
+TEST_HOST=127.0.0.1
+```
+2. Run the script below to execute the test
+```
+npm run test
+```
 
 ### Available endpoints and payload
 You can import the postman collection for the project using the <a href="https://www.getpostman.com/collections/0fe3f6b4bb373e683ee2">URL</a>
