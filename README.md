@@ -246,11 +246,5 @@ sample response
 ### Available endpoints and payload
 You can import the postman collection for the project using the <a href="https://www.getpostman.com/collections/0fe3f6b4bb373e683ee2">URL</a>
 
-
-### Run your tests
-```
-npm run test
-```
-
 ## Support
 For support towards this project, reach me on <a href="tel:2348183780409">+2348183780409</a> or <a href="mailto:engchris95@gmail.com">email</a>.
