@@ -19,8 +19,5 @@
     "mysql2": "^2.1.0",
     "sequelize": "^5.21.9"
   },
-  "devDependencies": {
-    "jest": "^26.0.1",
-    "supertest": "^4.0.2"
-  }
+  "devDependencies": {}
 }
