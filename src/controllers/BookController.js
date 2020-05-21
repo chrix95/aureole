@@ -57,7 +57,7 @@ module.exports = {
       const book =  { name, isbn, authors, country, number_of_pages, publisher, release_date } = req.body;
     
       await Book.create(book)
-      return res.status(200).send({ 
+      return res.status(201).send({ 
         status_code: 201,
         status: 'success',
         data: {
